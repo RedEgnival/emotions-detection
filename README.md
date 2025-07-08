@@ -4,7 +4,7 @@
 
 A real-time emotion detection system that classifies text into 6 emotional categories using machine learning.
 
-![App Screenshot](./assets/screenshot.png) *(Add screenshot later)*
+![App Screenshot](./emotion_ss.png) 
 
 ## Features ✨
 
