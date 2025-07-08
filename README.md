@@ -1,18 +1,35 @@
-# Emotion Detection from Text
+# Emotion Detection App 🎭
 
-This project uses machine learning to classify emotions (happy, sad, anger, etc.) from short English text messages. It utilizes TF-IDF features and a Logistic Regression classifier for emotion detection.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://emotions-detection-nhinjjaenxd4iziqfznwxx.streamlit.app/)
 
-## Dataset
+A real-time emotion detection system that classifies text into 6 emotional categories using machine learning.
 
-The dataset is from Kaggle: [Emotion Dataset](https://www.kaggle.com/datasets/djonesdev/emotion-dataset), containing three files:
-- `train.txt`
-- `val.txt`
-- `test.txt`
+![App Screenshot](./assets/screenshot.png) *(Add screenshot later)*
 
-Each file has two columns: `text` and `emotion`, separated by a semicolon (`;`).
+## Features ✨
 
-## Project Structure
+- **Six Emotion Detection**: Anger, Fear, Joy, Love, Sadness, Surprise
+- **Probability Visualization**: See confidence levels for all emotions
+- **Emoji Integration**: Visual feedback with expressive emojis
+- **Responsive Design**: Works on desktop and mobile devices
 
-- `sentiment-analysis.ipynb`: Main Jupyter notebook containing all code for preprocessing, training, and evaluation.
-- `README.md`: Project overview and usage instructions.
-- `requirements.txt`: Python dependencies.
+## Tech Stack 🛠️
+
+- **Frontend**: Streamlit
+- **Backend**: Python
+- **Machine Learning**:
+  - Scikit-learn (Logistic Regression)
+  - TF-IDF Vectorization
+- **Utilities**: Joblib, Pandas, NumPy
+
+## How It Works 🔍
+
+1. User inputs text via text area
+2. Model processes text through pipeline:
+   ```mermaid
+   graph LR
+   A[Raw Text] --> B(TF-IDF Vectorization)
+   B --> C(Logistic Regression)
+   C --> D[Emotion Prediction]
+
+
